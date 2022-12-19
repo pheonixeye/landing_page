@@ -68,11 +68,15 @@ section {
 
 #section0 {
     position: relative;
-    min-height: 5vh;
+    min-height: 30vh;
+    /* max-height: 30vh; */
 }
 
 
 /* ---- Module Rules ---- */
+#footer__div {
+    text-align: center;
+}
 
 /* Navigation Styles*/
 .navbar__menu ul {
