@@ -1,14 +1,19 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Manipulating the DOM</title>
   <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
+  <!--load app.js-->>
+  <script src="js/app.js" rel="script"></script>
 </head>
+
 <body>
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
@@ -20,34 +25,192 @@
   </header>
   <main>
     <header class="main__hero">
-      <h1>Landing Page </h1>
+      <h1>Kareem Zaher</h1>
     </header>
     <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
+    <section id="section0" data-nav="section 0">
+      <div class="landing__container">
+        <h2>Personal Statement</h2>
+        <p>I'm motivated and very good at catching on quickly to the mechanics of things or how a
+          particular organization or structure works. I also enjoy working as part of a team, which I
+          consider one of my strongest points.</p>
+      </div>
+    </section>
     <section id="section1" data-nav="Section 1" class="your-active-class">
       <div class="landing__container">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h2>About</h2>
+        <h3>Flutter & Dart Developer</h3>
+        <p>Hi, I'm Kareem Zaher, A freelance Flutter & dart Developer. </p>
+        <p>I graduated medical school in 2012, started working on my career as a urology intern, a urology resident then
+          a urology specialist till 2018. </p>
+        <p>I started learning dart & flutte in late 2018 & early 2019, since then I constructed many projects from top
+          to bottom using flutter as a frontend tool & dart in the backend. </p>
+        <p>As of 2019, I became a fulltime urology surgeon & a Freelance Flutter & dart developer @ Upwork.com</p>
+        <p>This Landing page is an attempt to learn javascript from scratch as per the requirement of the EGFWD
+          initiative / Udacity NanoDegree Program, eventually aiming to add Angular / TypeScript to my tech stack.</p>
       </div>
     </section>
     <section id="section2" data-nav="Section 2">
       <div class="landing__container">
-        <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h2>TechStack</h2>
+        <h3>Flutter</h3>
+        <ul>
+          <li>
+            <p>Designing & executing advanced <strong>responsive</strong> mobile & web layouts.</p>
+          </li>
+          <li>
+            <p>Proficiency in using <strong>state management</strong> solutions mainly Provider & to a lesser extent
+              GetX & BloC.</p>
+          </li>
+          <li>
+            <p>Implementation of custom <strong>animations.</strong>.</p>
+          </li>
+          <li>
+            <p><strong>API</strong> calls using http library.</p>
+          </li>
+          <li>
+            <p>Implementation of <strong>Firebase Cloud Messaging</strong> & notifications on android.</p>
+          </li>
+          <li>
+            <p>Data structuring & <strong>modeling</strong> (fromJson - toJson).</p>
+          </li>
+          <li>
+            <p><strong>Theming</strong> & styling on application level with light, dark & custom themes.</p>
+          </li>
+          <li>
+            <p>Application <strong>localization</strong> into multiple languages.</p>
+          </li>
+          <li>
+            <p>Construction of custom <strong>reusable</strong> components.</p>
+          </li>
+          <li>
+            <p><strong>Routing</strong> and navigation using flutter navigator 2.0 api (Go_Router).</p>
+          </li>
+          <li>
+            <p>Implementation of <strong>clean architecture</strong>, separation of concerns & clean folder structure.
+            </p>
+          </li>
+        </ul>
+        <h3>Dart</h3>
+        <ul>
+          <li>
+            <p>Design <strong>API</strong> using various Dart frameworks mainly Conduit (previously Aqueduct).</p>
+          </li>
+          <li>
+            <p>API deployment to <strong>cloud</strong> providers (Oracle, Vultur, Azure).</p>
+          </li>
+          <li>
+            <p>Compiling Dart executables to be deployed on <strong>linux</strong> VM in the cloud.</p>
+          </li>
+        </ul>
+        <h3>MongoDB</h3>
+        <ul>
+          <li>
+            <p>
+              Advanced usage of NoSql databases mainly <strong>Mongodb</strong>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Implementation of <strong>Mongo_dart</strong> package on pub.dev for querries & data handling.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use of <strong>ATLAS cloud</strong> for deployment of cloud based instances of MongoDB.
+            </p>
+          </li>
+        </ul>
+        <h3>Firebase</h3>
+        <ul>
+          <li>
+            <p>
+              Deployment of Multiple web based applications / websites to <strong>Firebase</strong> Hosting.
+            </p>
+          </li>
+          <li>
+            <p>
+              Mid level usage of Firebase Cloud <strong>Messaging</strong> & Firebase cloud <strong>Functions</strong>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Usage of Firebase <strong>CLI</strong> for deployment & maintainance.
+            </p>
+          </li>
+        </ul>
+        <h3>Git</h3>
+        <ul>
+          <li>
+            <p>
+              Basic / Mid level usage of <strong>GIT</strong> as a version control system.
+            </p>
+          </li>
+        </ul>
+        <h3>HAProxy</h3>
+        <ul>
+          <li>
+            <p>
+              Mid level usage of <strong>HAProxy</strong> as a reverse proxy for cloud deployments.
+            </p>
+          </li>
+        </ul>
+        <h3>SSH</h3>
+        <ul>
+          <li>
+            <p>
+              Application of <strong>CERTBOT</strong> for SSH certificates' generation & automatic renewal.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
     <section id="section3" data-nav="Section 3">
       <div class="landing__container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.kareemzaher.iief15&hl=en&gl=US">Erection Test
+              App</a></li>
+          <p>My first project as a Flutter developer, deployed onto the Google PlayStore. In this application I used the
+            already researched IIEF-15 questionnaire for evaluation of erectile dysfunction in men. I learned the basics
+            of navigation & styling in Flutter as well as implemening many basic to mid level dart language concepts.
+          </p>
+          <li><a href="https://play.google.com/store/apps/details?id=drkareemzaher.cosmosurgeclinicsapp">CosmoSurge
+              Clinics
+              App</a></li>
+          <p>In this project I implemented what I learned in dart language about API calls, Managing state in Flutter
+            using the provider package, Advanced routing & navigation, Custom styling & creation of reusable components.
+            It is a Doctor / Clinic Booking app with backend deployed on Oracle Cloud Network.
+          </p>
+          <li><a href="https://www.cosmosurgecairo.com">CosmoSurge Clinics Website</a></li>
+          <p>The website counterpart of CosmoSurge Clinics Mobile App with the same functionalities & deployed with
+            Firebase Hosting. It was a good introduction to the Flutter WEB echosystem with a small introduction to
+            HTMl/CSS.
+          </p>
+          <li><a href="https://www.proclinicsystems.com">ProClinic Systems Website</a></li>
+          <p>It's a landing page created with Flutter to demo ProClinic "Clinic Management Software" with links to
+            Youtube explanation videos in Arabic, Important app features, Contact details & a downloadable link to the
+            demo application.
+          </p>
+          <li><a href="https://www.testtube.app">TestTube.app</a></li>
+          <p>A Marketplace for Quizzes in different subjects. Each user has a profile with a login / logout function,
+            changing profile information & phone number.
+            You log in, select which instructors to follow & show their uploaded quizzes, put a quiz in your favorites &
+            purchase a quiz.</p>
+          <p>It was a challening project overall, it consisted of 4 major parts: a Marketplace website for students, a
+            windows application for instructors to add & customize their quizzes, a mobile android application for
+            students to login & access their purchased quizzes with an exam mode & a study mode & finally a backend
+            server that is 24/7 online deployed on VULTUR.
+          </p>
+          <li><a href="https://www.kareemzaher.com">My Clinic Website</a></li>
+          <p>Created with wordpress &#128517;, Has my clinic contact information & working hours. Yet I recently used
+            Flutter WEB to improve / change certain pages of the website using IFRAMES, a little hacky I know &#128517;
+            & is 100% functional & woking.
+          </p>
+        </ul>
       </div>
     </section>
   </main>
@@ -56,4 +219,5 @@
   </footer>
 
 </body>
+
 </html>

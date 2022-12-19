@@ -60,3 +60,6 @@
 // Set sections as active
 
 
+
+
+console.log('script connected...');
