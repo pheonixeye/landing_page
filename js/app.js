@@ -70,7 +70,7 @@ function buildNavItem(title, index) {
 
 let navbar = document.getElementById("navbar__list");
 
-const items = document.getElementsByClassName("landing__container");
+// const items = document.getElementsByClassName("landing__container");
 
 navbar.style.backgroundColor = "white";
 
@@ -95,12 +95,64 @@ navItems.forEach((item) => {
 //TODO: build event listener fns
 function listenToClickEvent(index) {
     const navItemClicked = document.getElementById(`${index}`);
+    let otherNavItems = document.getElementsByClassName('nav__item');
     let otherSections = document.querySelectorAll(`section`);
     otherSections.forEach((e) => {
         e.className = '';
     });
     let sectionNavigatedTo = document.getElementById(`section${index}`);
     sectionNavigatedTo.classList.toggle('your-active-class');
+    if (sectionNavigatedTo.id.includes(`${index}`)) {
+        for (let i = 0; i < otherNavItems.length; i++) {
+            otherNavItems[i].classList.remove('active');
+        }
+        navItemClicked.classList.add('active');
+    }
+
+}
+
+
+//!found documentation about observer api on mdn
+//?https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+//!better handling than scroll events
+//hope i used it properly ;)
+//* done
+
+function listenToScrollEvent() {
+    let otherSections = document.querySelectorAll(`section`);
+    let navItems = document.querySelectorAll('.nav__item');
+    let observerOptions = {
+        root: document,
+        rootMargin: '100px',
+        threshold: 0.3,
+    };
+    const obs = new window.IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+            console.log(entry.target);
+            otherSections.forEach((e) => {
+                e.classList.remove('your-active-class');
+            });
+            entry.target.classList.add('your-active-class');
+            navItems.forEach((e) => {
+                e.classList.remove('active');
+            });
+            let index = entry.target.getAttribute('data-nav');
+            navItems.forEach((e) => {
+                if (e.id == index) {
+                    e.classList.add('active');
+                }
+            });
+
+        }
+    }, observerOptions,);
+
+    for (let i = 0; i < otherSections.length; i++) {
+        let section = otherSections[i];
+        obs.observe(section);
+
+    }
+
+
 }
 //TODO: listen for click event on nav bar items
 //TODO: find item with data-nav attribute equal to navbar item data-nav section #
@@ -120,3 +172,11 @@ for (let i = 0; i < liInNavBar.length; i++) {
 }
 
 
+// document.addEventListener('scroll', function (event) {
+//     listenToScrollEvent();
+// }, true,);
+listenToScrollEvent();
+
+//TODO: reflect active nav bar item when scrolling passively(active class);
+
+//* done with basic requirements

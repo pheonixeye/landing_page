@@ -106,8 +106,8 @@ section {
     transition: ease 0.3s all;
 }
 
-.navbar__menu .menu__link:active {
-    background: #333;
+.navbar__menu .active {
+    background: rgb(51, 67, 136);
     color: #fff;
     transition: ease 0.3s all;
 }
