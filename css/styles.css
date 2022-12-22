@@ -41,8 +41,9 @@ h2 {
 }
 
 p {
-    line-height: 1.6em;
+    line-height: 2em;
     color: #eee;
+    font-size: 1.1em;
 }
 
 a {
@@ -105,6 +106,12 @@ section {
     transition: ease 0.3s all;
 }
 
+.navbar__menu .menu__link:active {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -137,6 +144,18 @@ section {
     .landing__container {
         max-width: 50em;
         padding: 4em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar__menu .menu__link {
+        font-weight: normal;
+        padding: 4px;
+        font-size: small;
+    }
+
+    .navbar__menu ul {
+        text-align: center;
     }
 }
 
@@ -224,7 +243,7 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 section.your-active-class .landing__container::before {
@@ -232,10 +251,14 @@ section.your-active-class .landing__container::before {
     animation: rotate 4s linear 0s infinite forwards;
 }
 
+
+
 section.your-active-class .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
+
+
 
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
