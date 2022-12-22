@@ -61,5 +61,33 @@
 
 
 
-
+//testing add event listener;
 console.log('script connected...');
+
+function buildNavItem(e) {
+    return `<li>${e}</li>`;
+}
+
+let navbar = document.getElementById("navbar__list");
+
+const items = document.getElementsByClassName("landing__container");
+
+navbar.style.backgroundColor = "black";
+
+const headingsHTML = document.querySelectorAll("h2");
+
+let headings = [];
+
+headingsHTML.forEach((item) => { headings.push(item.innerText) });
+
+let navItems = [];
+
+headings.forEach((e) => { navItems.push(buildNavItem(e)) });
+
+console.log(navItems);
+
+navItems.forEach((item) => {
+    navbar.insertAdjacentHTML('afterbegin', item);
+});
+
+

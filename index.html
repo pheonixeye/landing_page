@@ -10,8 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
   <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
-  <!--load app.js-->>
-  <script src="js/app.js" rel="script"></script>
 </head>
 
 <body>
@@ -31,7 +29,7 @@
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
-    <section id="section0" data-nav="section 0">
+    <section id="section0" data-nav="section 0" class="your-active-class">
       <div class="landing__container">
         <h2>Personal Statement</h2>
         <p>I'm motivated and very good at catching on quickly to the mechanics of things or how a
@@ -39,7 +37,7 @@
           consider one of my strongest points.</p>
       </div>
     </section>
-    <section id="section1" data-nav="Section 1" class="your-active-class">
+    <section id="section1" data-nav="Section 1">
       <div class="landing__container">
         <h2>About</h2>
         <h3>Flutter & Dart Developer</h3>
@@ -221,6 +219,8 @@
     </div>
   </footer>
 
+  <!--load app.js-->>
+  <script src="js/app.js" rel="script"></script>
 </body>
 
 </html>
