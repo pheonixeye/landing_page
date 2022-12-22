@@ -65,7 +65,7 @@
 console.log('script connected...');
 
 function buildNavItem(title, index) {
-    return `<li class="nav__item" data-nav="section ${index}"><a href="#section${index}" class = "menu__link">${title}</a></li>`;
+    return `<li id="${index}" class="nav__item" data-nav="section ${index}"><a href="#section${index}" class = "menu__link">${title}</a></li>`;
 }
 
 let navbar = document.getElementById("navbar__list");
@@ -86,9 +86,37 @@ headings.forEach((e) => { navItems.push(buildNavItem(e, navItems.length)) });
 
 navItems.reverse();
 
-console.log(navItems);
+// console.log(navItems);
 
 navItems.forEach((item) => {
     navbar.insertAdjacentHTML('afterbegin', item);
 });
+
+//TODO: build event listener fns
+function listenToClickEvent(index) {
+    const navItemClicked = document.getElementById(`${index}`);
+    let otherSections = document.querySelectorAll(`section`);
+    otherSections.forEach((e) => {
+        e.className = '';
+    });
+    let sectionNavigatedTo = document.getElementById(`section${index}`);
+    sectionNavigatedTo.classList.toggle('your-active-class');
+}
+//TODO: listen for click event on nav bar items
+//TODO: find item with data-nav attribute equal to navbar item data-nav section #
+//TODO: change class to your-active-class
+
+let liInNavBar = document.querySelectorAll('.nav__item');
+
+let index = 0;
+
+for (let i = 0; i < liInNavBar.length; i++) {
+    liInNavBar[i].addEventListener('click', function (event) {
+        index = i;
+        console.log(index);
+        listenToClickEvent(index);
+
+    },);
+}
+
 
