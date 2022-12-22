@@ -64,15 +64,15 @@
 //testing add event listener;
 console.log('script connected...');
 
-function buildNavItem(e) {
-    return `<li>${e}</li>`;
+function buildNavItem(title, index) {
+    return `<li class="nav__item" data-nav="section ${index}"><a href="#section${index}" class = "menu__link">${title}</a></li>`;
 }
 
 let navbar = document.getElementById("navbar__list");
 
 const items = document.getElementsByClassName("landing__container");
 
-navbar.style.backgroundColor = "black";
+navbar.style.backgroundColor = "white";
 
 const headingsHTML = document.querySelectorAll("h2");
 
@@ -82,12 +82,13 @@ headingsHTML.forEach((item) => { headings.push(item.innerText) });
 
 let navItems = [];
 
-headings.forEach((e) => { navItems.push(buildNavItem(e)) });
+headings.forEach((e) => { navItems.push(buildNavItem(e, navItems.length)) });
+
+navItems.reverse();
 
 console.log(navItems);
 
 navItems.forEach((item) => {
     navbar.insertAdjacentHTML('afterbegin', item);
 });
-
 
