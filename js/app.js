@@ -124,7 +124,7 @@ function listenToScrollEvent() {
     let observerOptions = {
         root: document,
         rootMargin: '100px',
-        threshold: 0.3,
+        threshold: 0.1,
     };
     const obs = new window.IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
@@ -165,9 +165,11 @@ let index = 0;
 for (let i = 0; i < liInNavBar.length; i++) {
     liInNavBar[i].addEventListener('click', function (event) {
         index = i;
-        console.log(index);
+        // console.log(index);
+        event.preventDefault();
+        let section = document.querySelector(`#section${index}`);
+        section.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         listenToClickEvent(index);
-
     },);
 }
 
