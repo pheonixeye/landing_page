@@ -7,21 +7,21 @@ This project is a Landing page as required by the **Udacity** / **EGFWD** Nano-D
 Table of Contents
 =================
 
-- ##### [Aim] (#1)
-- ##### [TechStack] (#2)
-- ##### [Deployment] (#3)
-- ##### [Sponsor] (#4)
-- ##### [License] (#5)
+- [##### Aim] (#1)
+- [##### TechStack] (#2)
+- [##### Deployment] (#3)
+- [##### Sponsor] (#4)
+- [##### License] (#5)
 
 ---
 
-# Aim {#1}
+# Aim 
 
 Excercise Learned Concepts in JavaScript by programatically modifying DOM elements.
 
 ---
 
-# TechStack {#2}
+# TechStack 
 
 - HTML
 - CSS
@@ -30,19 +30,19 @@ Excercise Learned Concepts in JavaScript by programatically modifying DOM elemen
 
 ---
 
-# Deployment {#3}
+# Deployment 
 
 <https://kareemzaherportfolio.web.app>
 
 ---
 
-# Sponsor {#4}
+# Sponsor 
 
 This Project is Sponsored by **EGFWD** initiative & **Udacity**.
 
 ---
 
-# {#5}
+# License 
 
 MIT License.
 
