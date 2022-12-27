@@ -7,11 +7,11 @@ This project is a Landing page as required by the **Udacity** / **EGFWD** Nano-D
 Table of Contents
 =================
 
-- [##### Aim] (#1)
-- [##### TechStack] (#2)
-- [##### Deployment] (#3)
-- [##### Sponsor] (#4)
-- [##### License] (#5)
+- ##### Aim
+- ##### TechStack
+- ##### Deployment
+- ##### Sponsor
+- ##### License
 
 ---
 
